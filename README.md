@@ -2,7 +2,7 @@
 
 # 05 Third-Party APIs: Task Board
 
-<!-- ## Your Task
+## Your Task
 
 Create a simple task board application that allows a team to manage project tasks by modifying starter code. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
 
@@ -38,7 +38,7 @@ THEN the saved tasks persist
 
 The following animation demonstrates the application functionality:
 
-![A user adds three tasks to the task board and changes the state of two of them to in progress and then completion. The user then deletes the two cards in the done column.](./Assets/05-third-party-apis-homework-demo.gif) -->
+![A user adds three tasks to the task board and changes the state of two of them to in progress and then completion. The user then deletes the two cards in the done column.](./Assets/05-third-party-apis-homework-demo.gif)
 
 ## Grading Requirements
 
