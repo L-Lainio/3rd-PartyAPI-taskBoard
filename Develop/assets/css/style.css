@@ -1,94 +1,40 @@
-:root {
-  --light: #f6f6f6;
-  --darkblue: #2c3e50;
-  --lightblue: #3498db;
-  --red: #e74c3c;
-  --lightred: #f9eae7;
-  --lightyellow: #fff5d1;
-}
-
 body {
-  font-family: 'Fira Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 16px;
-  font-weight: 400;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 700;
-}
-
-/* Shared custom styles for headers */
-.header,
-.custom-modal-header,
-.custom-card-header,
-.btn-custom {
-  background-color: var(--darkblue);
-  color: var(--light);
-}
-
-.btn-custom:hover {
-  color: var(--lightblue);
-}
-
-.swim-lanes {
+.swimLanes {
   min-height: 60vh;
 }
 
-.task-card {
-  margin: 0 auto;
+.taskCard:hover {
+  cursor: grab;
+}
+
+.taskCard {
   max-width: 100%;
   padding: 5%
 }
 
-.task-card:hover {
-  cursor: grab;
+.cardDeleteButton {
+  float: right;
 }
 
-/* style project rows based on status (late, due today) */
-.project-late {
-  background-color: var(--lightred);
+.pastDue {
+  background-color: lightcoral;
 }
 
-.project-today {
-  background-color: var(--lightyellow);
+.dueSoon {
+  background-color: palegoldenrod;
 }
 
-
-/* add task popup */
-a.selected {
-  background-color: #1F75CC;
-  color: white;
-  z-index: 100;
+.dueLater {
+  background-color: lightgreen;
 }
 
-.messagepop {
-  background-color: #FFFFFF;
-  border: 1px solid #999999;
-  cursor: default;
-  display: none;
-  margin-top: 15px;
-  position: absolute;
-  text-align: left;
-  width: 394px;
-  z-index: 50;
-  padding: 25px 25px 20px;
-}
-
-label {
-  display: block;
-  margin-bottom: 3px;
-  padding-left: 15px;
-  text-indent: -15px;
-}
-
-.messagepop p,
-.messagepop.div {
-  border-bottom: 1px solid #EFEFEF;
-  margin: 8px 0;
-  padding-bottom: 8px;
+#todoCards,
+#inProgressCards,
+#doneCards {
+  min-height: 100%;
+  min-width: 100%;
 }
