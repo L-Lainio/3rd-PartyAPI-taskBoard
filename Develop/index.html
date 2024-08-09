@@ -10,9 +10,8 @@
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
-
-  <link rel="stylesheet" href="./css/style.css" />
-  <title>Task_Board</title>
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <title>Task Board</title>
 </head>
 
 <body>
@@ -22,38 +21,31 @@
   </header>
   <div class="container">
     <div class="text-center mb-5">
-      <button type="button" class="btn btn-success" id="show-task-box-btn" data-bs-toggle="modal"
-        data-bs-target="#task-form">
-        Add Task
-      </button>
+      <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#formModal">Add Task</button>
     </div>
-    <!-- Todo: Create a modal with a form to add tasks -->
 
-    <!-- Fix Modal -->
-    <div class="modal fade" id="task-form" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="formModal" tabindex="-1" aria-labelledby="formModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h4 class="modal-title" id="exampleModalLabel">Modal title</h4>
+            <h5 class="modal-title" id="formModalLabel">Create New Task</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-            <form class="m-5 d-flex flex-column task-box__form">
-              <div class="mb-3 d-flex flex-column flex-md-row justify-content-between">
-                <div class="">
-                  <label for="task-title" class="form-label">Task Title</label>
-                  <input type="text" class="form-control" id="task-title" autocomplete="off" />
-                </div>
-                <fieldset class="disable">
-                  <label for="task-date" class="form-label">Task Due Date</label>
-                  <input type="text" class="form-control" id="task-date" autocomplete="off" />
-                </fieldset>
+            <form id="taskForm">
+              <div class="mb-3">
+                <label for="taskTitle" class="form-label">Title:</label>
+                <input type="text" class="form-control" id="taskTitle" required autocomplete="off">
               </div>
-              <div class="mb-5">
-                <label for="task-description" class="form-label" autocomplete="off">Task Description</label>
-                <textarea class="form-control" id="task-description" rows="3"></textarea>
+              <div class="mb-3">
+                <label for="taskDescription" class="form-label">Description:</label>
+                <textarea class="form-control" id="taskDescription" required></textarea>
               </div>
-              <button type="button" class="btn btn-success align-self-center fs-5" id="add-task"> Add Task </button>
+              <div class="mb-3">
+                <label for="taskDueDate" class="form-label">Due Date:</label>
+                <input class="form-control" id="taskDueDate" required autocomplete="off">
+              </div>
+              <button type="submit" class="btn btn-primary">Create Task</button>
             </form>
           </div>
         </div>
@@ -62,22 +54,22 @@
 
     <div class="row swim-lanes text-center justify-content-between">
       <div class="col-12 col-lg-4 d-flex">
-        <div id="to-do" class="card border-light mb-3 lane flex-grow-1">
+        <div id="todo" class="card border-light mb-3 lane flex-grow-1">
           <div class="card-header bg-white">
             <h2 class="card-title mb-1">To Do</h2>
           </div>
           <div class="card-body bg-light">
-            <ul id="todo-cards-list" class="list-group connectedSortable custom-height"></ul>
+            <div id="todocards"></div>
           </div>
         </div>
       </div>
       <div class="col-12 col-lg-4 d-flex">
-        <div id="in-progress" class="card border-light mb-3 lane flex-grow-1">
+        <div id="inProgress" class="card border-light mb-3 lane flex-grow-1">
           <div class="card-header bg-white">
             <h2 class="card-title mb-1">In Progress</h2>
           </div>
           <div class="card-body bg-light">
-            <ul id="in-progress-cards-list" class="list-group connectedSortable custom-height"></ul>
+            <div id="inProgressCards"></div>
           </div>
         </div>
       </div>
@@ -87,7 +79,7 @@
             <h2 class="card-title mb-1">Done</h2>
           </div>
           <div class="card-body bg-light">
-            <ul id="done-cards-list" class="list-group connectedSortable custom-height"></ul>
+            <div id="doneCards"></div>
           </div>
         </div>
       </div>
@@ -97,13 +89,12 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
-    crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
     integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U=" crossorigin="anonymous"></script>
 
-  <script src="./js/script.js"></script>
+  <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
