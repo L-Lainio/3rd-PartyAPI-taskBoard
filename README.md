@@ -57,7 +57,14 @@ THEN the saved tasks persist
 The following animation demonstrates the application functionality:
 
 ## Screenshots & GIF
-A user adds three tasks to the task board and changes the state of two of them to in progress and then completion. The user then deletes the two cards in the done column.![](./Assets/05-third-party-apis-homework-demo.gif)
+A user adds three tasks to the task board and changes the state of two of them to in progress and then completion. The user then deletes the two cards in the done column.
+
+
+![](./Develop/assets/images/Zight%202024-8-9%20at%207.25.18%20PM.jpeg)
+![](./Develop/assets/images/Zight%202024-8-9%20at%207.25.52%20PM.jpeg)
+![](./Develop/assets/images/Zight%202024-8-9%20at%207.26.09%20PM.jpeg)
+![](./Develop/assets/images/Zight%20Recording%202024-8-9%20at%207.26.56%20PM.gif)
+![](./Develop/assets/images/Zight%20Recording%202024-8-9%20at%207.27.32%20PM.gif)
 
 ## Technologies-Used
 The technologies used for the Third-Party APIs: Task Board are as follows:
@@ -96,18 +103,6 @@ Test and Debug:
 
 Test your application to ensure that it functions as expected. Debug any issues that arise during testing to ensure a smooth user experience.
 By following these installation steps and setting up the necessary libraries and project structure, you can start working on the Week 5 Challenge - Third-Party APIs: Task Board successfully.
-
-
-### Deployment: 32%
-
-* Application deployed at live URL
-
-* Application loads with no errors
-
-* Application GitHub URL submitted
-
-* GitHub repo contains application code
-
 
 ## License
 
