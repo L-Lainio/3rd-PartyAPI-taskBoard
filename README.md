@@ -1,24 +1,44 @@
 # 3rd-PartyAPI-taskBoard
+Week-05 Challenge
+Third-Party APIs: Task Board
 
-# 05 Third-Party APIs: Task Board
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![JQUERY](https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white)
+![GITHUB](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+![Lora Lainio](https://img.shields.io/badge/Lora-Lainio-4baaaa.svg)
 
-## Your Task
+## Table of Contents
 
-Create a simple task board application that allows a team to manage project tasks by modifying starter code. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
+ * [Description](#description)
 
-You'll need to use the [Day.js](https://day.js.org/en/) library to work with dates. Be sure to read the documentation carefully and concentrate on using Day.js in the browser.
+ * [Screenshots](#screenshots)
 
-## User Story
+ * [Technologies-Used](#technologies-used)
 
-```md
+ * [Installation](#installation)
+
+ * [Test-Instructions](#test-instructions)
+
+ * [License](#license)
+
+ * [Questions](#questions)
+
+## Description
+A user adds three tasks to the task board and changes the state of two of them to in progress and then completion. The user then can sort and manage tasks in each column.
+I am creating a simple task board application that allows a team to manage project tasks by modifying starter code. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
+
+I will need to use the Day.js library to work with dates. I will read the documentation carefully and concentrate on using Day.js in the browser.
+
+User Story:
+
 AS A project team member with multiple tasks to organize
 I WANT a task board
 SO THAT I can add individual project tasks, manage their state of progress and track overall project progress accordingly
-```
+Acceptance Criteria:
 
-## Acceptance Criteria
-
-```md
 GIVEN a task board to manage a project
 WHEN I open the task board
 THEN the list of project tasks is displayed in columns representing the task progress state (Not Yet Started, In Progress, Completed)
@@ -34,31 +54,49 @@ WHEN I click the delete button for a task
 THEN the task is removed from the task board and will not be added back after refreshing
 WHEN I refresh the page
 THEN the saved tasks persist
-```
-
 The following animation demonstrates the application functionality:
 
-![A user adds three tasks to the task board and changes the state of two of them to in progress and then completion. The user then deletes the two cards in the done column.](./Assets/05-third-party-apis-homework-demo.gif)
+## Screenshots & GIF
+A user adds three tasks to the task board and changes the state of two of them to in progress and then completion. The user then deletes the two cards in the done column.![](./Assets/05-third-party-apis-homework-demo.gif)
 
-## Grading Requirements
+## Technologies-Used
+The technologies used for the Third-Party APIs: Task Board are as follows:
 
-> **Note**: If a Challenge assignment submission is marked as “0”, it is considered incomplete and will not count towards your graduation requirements. Examples of incomplete submissions include the following:
->
-> * A repository that has no code
->
-> * A repository that includes a unique name but nothing else
->
-> * A repository that includes only a README file but nothing else
->
-> * A repository that only includes starter code
+jQuery: Used for DOM manipulation and event handling in the project management application to create interactive features.
 
-This Challenge is graded based on the following criteria:
+jQuery UI: Utilized for creating interactive task boards, enabling drag-and-drop functionality for managing project tasks effectively.
 
-### Technical Acceptance Criteria: 40%
+Day.js: Integrated into the application to work with dates, ensuring efficient handling and display of project task due dates.
 
-* Satisfies all of the above acceptance criteria plus the following:
+These technologies collectively contribute to the development of a dynamic and user-friendly task board application for managing project tasks within a team.
 
-  * Uses the Day.js library to work with dates
+## Installation
+
+To set up the environment for the Week 5 Challenge - Third-Party APIs: Task Board, follow these installation steps:
+
+Clone the Starter Code:
+
+Before starting the project, clone the starter code provided for the task board application. You can find the starter code by following the provided link.
+jQuery and jQuery UI:
+
+Ensure that you have jQuery and jQuery UI libraries included in your project. You can either download these libraries and include them in your project directory or link to CDN versions in your HTML file.
+Day.js Library:
+
+Download the Day.js library or include it via a CDN in your HTML file. Make sure to include the necessary script tags to load Day.js in your project.
+Set Up Project Structure:
+
+Organize your project files and folders as needed for the task board application. Ensure that your HTML, CSS, and JavaScript files are structured appropriately.
+Start Coding:
+
+Begin coding the task board application using the provided starter code as a base. Implement the necessary functionality to create a simple task board that allows team members to manage project tasks.
+
+## Test-Instructions
+
+Test and Debug:
+
+Test your application to ensure that it functions as expected. Debug any issues that arise during testing to ensure a smooth user experience.
+By following these installation steps and setting up the necessary libraries and project structure, you can start working on the Week 5 Challenge - Third-Party APIs: Task Board successfully.
+
 
 ### Deployment: 32%
 
@@ -70,33 +108,17 @@ This Challenge is graded based on the following criteria:
 
 * GitHub repo contains application code
 
-### Application Quality: 15%
 
-* Application user experience is intuitive and easy to navigate
+## License
 
-* Application user interface style is clean and polished
+NOTICE: This application is covered under the MIT License
 
-* Application resembles the mock-up functionality provided in the Challenge instructions
-
-### Repository Quality: 13%
-
-* Repository has a unique name
-
-* Repository follows best practices for file structure and naming conventions
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages
-
-* Repository contains quality README file with description, screenshot, and link to deployed application
-
-## Review
-
-You are required to submit the following for review:
-
-* The URL of the deployed application
-
-* The URL of the GitHub repository, with a unique name and a README describing the project
-
-- - -
 © 2024 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+
+## Questions
+
+Have additional questions? Click the links below to reach me through my GitHub account or Email address.
+
+[Link to Github](https://github.com/L-Lainio)
+
+<a href="mailto:lora.lainio.it@gmail.com">lora.lainio.it@gmail.com</a>

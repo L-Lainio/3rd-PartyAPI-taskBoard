@@ -21,14 +21,29 @@ function createTaskCard(task) {
       </div>
     `);
 
+    taskCard.addClass('card task-card draggable my-3');
+    taskCard.attr('data-task-id', task.id);
+
+    const cardHeader = $('<div>').addClass('card-header h4').text(task.name);
+    const cardBody = $('<div>').addClass('card-body bg-lightblue');
+    const cardDescription = $('<p>').addClass('card-text').text(task.type);
+    const cardDueDate = $('<p>').addClass('card-text').text(task.dueDate);
+    const cardDeleteBtn = $('<button>')
+      .addClass('btn btn-danger delete')
+      .text('Delete')
+      .attr('data-task-id', task.id)
+      .on('click', handleDeleteTask);
+
+
+
     // function for color rendering
     if (task.deadline && task.status !== 'done') {
         const now = dayjs();
         const taskDueDate = dayjs(task.deadline, 'MM-DD-YYYY');
         if (now.isSame(taskDueDate, 'day')) {
-            taskCard.addClass('bg-warning text-white');
+            taskCard.addClass('bg-warning text-black');
         } else if (now.isAfter(taskDueDate)) {
-            taskCard.find('.card-body').addClass('bg-danger text-white');
+            taskCard.find('.card-body').addClass('bg-danger text-black');
             taskCard.find('.delete-btn').addClass('border-light');
         }
     }
