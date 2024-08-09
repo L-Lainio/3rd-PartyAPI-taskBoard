@@ -3,38 +3,14 @@ body {
   font-size: 16px;
 }
 
-.swimLanes {
+.swim-lanes {
   min-height: 60vh;
 }
 
-.taskCard:hover {
+.task-card {
+  margin: 0 auto;
+}
+
+.task-card:hover {
   cursor: grab;
-}
-
-.taskCard {
-  max-width: 100%;
-  padding: 5%
-}
-
-.cardDeleteButton {
-  float: right;
-}
-
-.pastDue {
-  background-color: lightcoral;
-}
-
-.dueSoon {
-  background-color: palegoldenrod;
-}
-
-.dueLater {
-  background-color: lightgreen;
-}
-
-#todoCards,
-#inProgressCards,
-#doneCards {
-  min-height: 100%;
-  min-width: 100%;
 }
