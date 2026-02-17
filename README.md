@@ -114,6 +114,3 @@ NOTICE: This application is covered under the MIT License
 
 Have additional questions? Click the links below to reach me through my GitHub account or Email address.
 
-[Link to Github](https://github.com/L-Lainio)
-
-<a href="mailto:lora.lainio.it@gmail.com">lora.lainio.it@gmail.com</a>
